@@ -1,0 +1,54 @@
+.transition {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.transition > button {
+  margin: 5px;
+}
+
+.btn {
+  background-color: aqua;
+  outline: none;
+  border: navajowhite;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  /* transition-property: background-color translate;
+  transition-duration: 600ms; */
+  /* transition-delay: 2s; */
+  /* transition: background-color 2s ease 3s, width 3s ease-in 4s,
+    color 5s ease-oAut 6s, border-radius 4s ease-out 8s; */
+  transition: all 3s ease-in-out 1s;
+  margin: 5px 0;
+}
+
+#ease {
+  animation-timing-function: ease;
+}
+
+#linear {
+  animation-timing-function: linear;
+}
+
+#ease-in {
+  animation-timing-function: ease-in;
+}
+
+#ease-out {
+  animation-timing-function: ease-out;
+}
+
+#ease-in-out {
+  animation-timing-function: ease-in-out;
+}
+
+.btn:hover {
+  background-color: blue;
+  transform: translate(900px, 0);
+  width: 200px;
+  color: white;
+  border-radius: 100px;
+}
