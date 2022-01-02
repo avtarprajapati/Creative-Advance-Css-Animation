@@ -1,0 +1,918 @@
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: gainsboro;
+  padding: 2rem;
+}
+
+.anchor {
+  text-decoration: none;
+  color: #272727;
+  font-size: 25px;
+  border: 5px solid #272727;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 10px;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+/* 15.creative btn rotate */
+.rotate-btn::before,
+.rotate-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transition: all 1s;
+  background-color: #fff200;
+}
+
+.rotate-btn::before {
+  transform-origin: top left;
+  transform: rotate(-90deg);
+}
+
+.rotate-btn::after {
+  transform-origin: top right;
+  transform: rotate(90deg);
+}
+
+.rotate-btn:hover::before,
+.rotate-btn:hover::after {
+  transform: rotate(0deg);
+}
+
+/* 16. Swipe */
+.swipe::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1abc9c;
+  z-index: -1;
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.swipe:hover::before {
+  transform: translateX(0%);
+  /* color: #fff; */
+}
+
+.swipe:hover {
+  color: #fff;
+}
+
+/* 17. button hover */
+
+.in::before,
+.in::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transition: all 1s;
+  background-color: lightcoral;
+}
+
+.in::before {
+  transform: rotateX(90deg);
+}
+
+.in::after {
+  transform: rotateY(90deg);
+}
+
+.in:hover::before {
+  transform: rotateX(0deg);
+}
+.in:hover::after {
+  transform: rotateY(0deg);
+}
+
+.in:hover {
+  color: #fff;
+}
+
+/* 18. stretching */
+.stretching {
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.stretching:hover {
+  letter-spacing: 0;
+  font-weight: 500;
+  border: 7px solid #000;
+}
+
+/* 19. swipe down with content Yeah! */
+.down::before {
+  content: "Yeah!";
+  transform: translateY(-100%);
+  background-color: #2ecc71;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 20 glowing effect*/
+.glowing:hover {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.glowing::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 50%;
+  transform: translateX(-100%) rotate(45deg);
+  transition: all 0.3s;
+}
+
+.glowing:hover:before {
+  transform: translateX(100%) rotate(45deg);
+}
+
+/* 21.two layer swapping button effect */
+.two-layer {
+  background-color: rgb(233, 204, 199);
+  color: transparent;
+}
+
+.two-layer::before,
+.two-layer::after {
+  content: "Hover Me";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #2ecc71;
+  z-index: 1;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  transition: all 0.5s;
+  align-items: center;
+}
+
+.two-layer::before {
+  transform: translate(-100%, 100%);
+}
+
+.two-layer:hover::before {
+  transform: translate(0, 0);
+}
+
+.two-layer:hover::after {
+  transform: translate(100%, -100%);
+}
+
+/* 22. text scaling effect */
+
+.text-scaling::before {
+  content: "Hover Me";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #272727;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+  transform: scale(5);
+  opacity: 0;
+}
+
+.text-scaling:hover::before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* 23. circular swapping */
+.circular-swapping:hover {
+  color: #fff;
+}
+.circular-swapping::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: coral;
+  transition: all 0.5s;
+  border-radius: 0 0 50% 50%;
+  z-index: -1;
+}
+
+.circular-swapping:hover::before {
+  height: 200%;
+}
+
+/* 24. rotate 3 layer */
+.rotate-3-layer {
+  border: none;
+  background-color: #fff200;
+}
+
+.rotate-3-layer::before,
+.rotate-3-layer::after {
+  content: "Hover Me";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2ecc71;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: rotateX(270deg);
+  transform-origin: top;
+  transition: all 0.5s;
+}
+
+.rotate-3-layer::after {
+  background-color: coral;
+  transition-delay: 0.25s;
+  transform-origin: bottom;
+}
+
+.rotate-3-layer:hover:before,
+.rotate-3-layer:hover::after {
+  transform: rotate(0deg);
+}
+
+/* 25. */
+.layer-swipe {
+  border-color: #2ecc71;
+  color: transparent;
+}
+
+.layer-swipe::before,
+.layer-swipe::after {
+  content: "Button";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #272727;
+  color: #2ecc71;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.layer-swipe:hover::before {
+  left: 100%;
+  transform: scale(0) rotateY(360deg);
+  opacity: 0;
+}
+
+.layer-swipe::after {
+  left: -100%;
+  opacity: 0;
+  transform: scale(0) rotateY(0);
+}
+
+.layer-swipe:hover::after {
+  left: 0;
+  opacity: 1;
+  transform: scale(1) rotateY(360deg);
+}
+
+/* 26. */
+.circle-3 {
+  text-transform: uppercase;
+  color: #2ecc71;
+  border: none;
+  transition: all 0.5s;
+  transition-delay: 0.6s;
+  position: relative;
+}
+
+.circle-3::before,
+.circle-3::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: #2ecc71;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: all 0.5s;
+  z-index: -1;
+  opacity: 0;
+}
+
+.circle-3::before {
+  left: 0;
+  box-shadow: -100px 0 0 #2ecc71;
+}
+
+.circle-3::after {
+  right: 0;
+  box-shadow: 100px 0 0 #2ecc71;
+}
+
+.circle-3:hover::before {
+  left: 50%;
+  box-shadow: 30px 0 0 #2ecc71;
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 1;
+}
+
+.circle-3:hover::after {
+  right: 50%;
+  box-shadow: -30px 0 0 #2ecc71;
+  transform: translateX(50%) translateY(-50%);
+  opacity: 1;
+}
+
+.circle-3 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2ecc71;
+  z-index: -1;
+  transform: scale(0);
+  transition: all 0.5s 0.6s;
+  border-radius: 5px;
+}
+
+.circle-3:hover span {
+  transform: scale(1);
+}
+
+.circle-3:hover {
+  color: #fff;
+}
+
+/* 27. */
+.btn-hover {
+  border: none;
+  color: #fff;
+}
+
+.btn-hover::before,
+.btn-hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: all 0.4s;
+  mix-blend-mode: multiply;
+}
+
+.btn-hover::before {
+  background-color: #28caff;
+  top: -10px;
+  left: -10px;
+  transform-origin: top;
+}
+
+.btn-hover::after {
+  background-color: #ff7675;
+  top: 10px;
+  left: 10px;
+  transform-origin: bottom;
+}
+
+.btn-hover:hover::before {
+  top: -15px;
+  left: 0;
+  transform: perspective(1000px) rotateX(60deg);
+}
+
+.btn-hover:hover::after {
+  top: 15px;
+  left: 0;
+  transform: perspective(1000px) rotateX(-60deg);
+}
+
+.btn-hover:hover {
+  color: #000;
+}
+
+/* 28. */
+.split-btn {
+  border-color: #1abc9c;
+  color: #1abc9c;
+  margin-top: 10px;
+}
+
+.split-btn:hover {
+  color: #fff;
+}
+
+.split-btn::before,
+.split-btn::after,
+.split-btn > span::before,
+.split-btn > span::after {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: #1abc9c;
+  z-index: -1;
+  transition: all 0.1s;
+}
+
+.split-btn::before {
+  /* top: 0; */
+  /* left: -25%; */
+  left: 0;
+  bottom: -100%;
+}
+
+.split-btn:hover::before {
+  left: 0;
+  bottom: 0%;
+}
+
+.split-btn::after {
+  left: 25%;
+  top: -100%;
+  transition-delay: 0.2s;
+}
+
+.split-btn:hover::after {
+  top: 0%;
+}
+
+.split-btn > span::before {
+  left: 50%;
+  bottom: -100%;
+  transition-delay: 0.3s;
+}
+
+.split-btn:hover > span::before {
+  bottom: 0;
+}
+
+.split-btn > span::after {
+  /* right: -25%; */
+  right: 0;
+  top: -100%;
+  transition-delay: 0.4s;
+}
+
+.split-btn:hover > span::after {
+  /* right: 0%; */
+  top: 0;
+}
+
+/* 29. */
+.border-swap {
+  margin-top: 5%;
+  border: none;
+  border-width: 2px;
+  overflow: unset;
+  color: #1abc9c;
+}
+
+.border-swap::before,
+.border-swap::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.border-swap::before {
+  top: -15%;
+  height: 135%;
+  border-left: 2px solid #1abc9c;
+  border-right: 2px solid #1abc9c;
+  transition: all 0.8s;
+}
+
+.border-swap::after {
+  left: -5%;
+  width: 115%;
+  border-top: 2px solid #1abc9c;
+  border-bottom: 2px solid #1abc9c;
+  transition: all 0.8s;
+  transition-delay: 0.4s;
+}
+
+.border-swap:hover::before {
+  transform: rotateY(180deg);
+}
+
+.border-swap:hover::after {
+  transform: rotateX(180deg);
+}
+
+/* 30. */
+.border-growing {
+  background-color: #1abc9c;
+  color: #fff;
+  margin-top: 5%;
+  overflow: initial;
+  /* border-color: #1abc9c; */
+  border: none;
+}
+
+.border-growing::before,
+.border-growing::after {
+  content: "";
+  position: absolute;
+  transition: all 0.4s;
+}
+
+.border-growing::before {
+  left: -4%;
+  top: -10%;
+  width: 25%;
+  height: 45%;
+  border-top: 2px solid #1abc9c;
+  border-left: 2px solid #1abc9c;
+}
+
+.border-growing::after {
+  right: -4%;
+  bottom: -10%;
+  width: 25%;
+  height: 45%;
+  border-right: 2px solid #1abc9c;
+  border-bottom: 2px solid #1abc9c;
+}
+
+.border-growing:hover::before,
+.border-growing:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+/* 31. */
+.first-letter-rotate {
+  border-width: 4px;
+}
+
+.first-letter-rotate:hover {
+  color: #fff;
+}
+
+.first-letter-rotate::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: -1;
+  background-color: #272727;
+  transition: all 0.5s;
+}
+
+.first-letter-rotate:hover:before {
+  opacity: 1;
+  transform: rotate(15deg);
+}
+
+.first-letter-rotate:hover span {
+  color: transparent;
+  position: relative;
+}
+
+.first-letter-rotate span::before {
+  transition: all 0.5s;
+  content: "B";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+}
+
+.first-letter-rotate:hover span::before {
+  font-size: 45px;
+  transform: translate(-40%, -30%) rotate(360deg);
+}
+
+/* 32 */
+.four-border-growing {
+  border: none;
+  color: #1abc9c;
+  /* overflow: unset; */
+}
+
+.four-border-growing::before,
+.four-border-growing::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4%;
+  display: block;
+  background-color: #1abc9c;
+  transition: all 0.4s;
+}
+
+.four-border-growing::before {
+  top: 0;
+  left: -100%;
+}
+.four-border-growing::after {
+  right: -100%;
+}
+
+.four-border-growing:hover::before {
+  left: 0;
+}
+.four-border-growing:hover::after {
+  right: 0;
+}
+
+/* .four-border-growing span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+} */
+
+.four-border-growing span::before,
+.four-border-growing span::after {
+  content: "";
+  position: absolute;
+  width: 1%;
+  height: 100%;
+  display: block;
+  transition: all 0.4s;
+  background-color: #1abc9c;
+}
+
+.four-border-growing span::before {
+  top: -100%;
+  right: 0%;
+}
+
+.four-border-growing:hover span::before {
+  top: 0;
+}
+
+.four-border-growing span::after {
+  bottom: -100%;
+  left: 0%;
+}
+
+.four-border-growing:hover span::after {
+  bottom: 0;
+}
+
+/* 33 wavy */
+
+.wave-btn {
+  border: 2px solid #1abc9c;
+  color: #1abc9c;
+  /* overflow: unset; */
+  /* margin-bottom: 20%; */
+}
+
+.wave {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  left: 0;
+  top: calc(100% + 22px);
+  background-color: #00aeff;
+  transition: all 1s;
+}
+
+.wave::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -22px;
+  width: 100%;
+  height: 22px;
+  z-index: -1;
+  /* transition: all 0.4s; */
+  background: url(../../images/wave.png) no-repeat;
+  animation: wavy 0.9s linear infinite;
+}
+
+@keyframes wavy {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 118px;
+  }
+}
+
+.wave-btn:hover {
+  color: #fff;
+}
+
+.wave-btn:hover .wave {
+  top: 0;
+}
+
+/* 34. two-cuts */
+
+.two-cuts {
+  border: none;
+  /* overflow: unset; */
+}
+
+.two-cuts span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 90%;
+  width: 90%;
+  z-index: -1;
+  /* display: block; */
+  background-color: transparent;
+  border: 2px solid #000;
+}
+
+.two-cuts span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8%;
+  height: 290%;
+  background-color: #fff;
+  transform: translate(-50%, -50%) rotate(-60deg);
+  transition: all 0.2s;
+}
+
+.two-cuts:hover {
+  color: #fff;
+}
+
+.two-cuts:hover span::before {
+  width: 100%;
+  background-color: #000;
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+
+/* 35. two-skew */
+.two-skew {
+  letter-spacing: 7px;
+  border: none;
+  font-size: 28px;
+  text-transform: uppercase;
+  z-index: 1;
+  color: white;
+  /* width: 280px; */
+  margin-top: 2%;
+  overflow: unset;
+}
+
+.two-skew::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background-color: #ee5253;
+  left: -1%;
+  top: -3px;
+  transform: skew(30deg);
+  transition: all 0.4s cubic-bezier(0.68, -0.05, 0.265, 1.55);
+  z-index: -1;
+}
+
+.two-skew:hover::before {
+  transform: skewX(0deg);
+  left: 50%;
+  top: 0;
+}
+
+.two-skew::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  left: 51%;
+  top: 3px;
+  background-color: #0a3d62;
+  transform: skew(30deg);
+  transition: all 0.4s cubic-bezier(0.68, -0.05, 0.265, 1.55);
+  z-index: -1;
+}
+
+.two-skew:hover::after {
+  transform: skewX(0deg);
+  left: 0;
+  top: 0;
+}
+
+/* 36. Pulsing */
+.pulsing {
+  margin-top: 1rem;
+  border: none;
+  text-transform: uppercase;
+  background-color: white;
+  border-radius: 50px;
+  transition: all 0.2s;
+  cursor: pointer;
+  /* transform: scaleX(1.4) scaleY(1.6); */
+}
+
+.pulsing::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.pulsing:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  background-color: #00aeff;
+  opacity: 0;
+}
+
+.pulsing:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.pulsing:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 37. diagonal-swipe */
+.diagonal-swipe {
+  border: 4px solid #250e74;
+  color: #250e74;
+}
+
+.diagonal-swipe::before,
+.diagonal-swipe::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-top: 25px solid #250e74;
+  border-bottom: 25px solid #250e74;
+  transition: all 0.3s;
+  z-index: -1;
+}
+.diagonal-swipe::before {
+  transform: translateX(-100%);
+  border-right: 25px solid transparent;
+}
+
+.diagonal-swipe::after {
+  transform: translateX(100%);
+  border-left: 25px solid transparent;
+}
+
+.diagonal-swipe:hover::before,
+.diagonal-swipe:hover::after {
+  transform: translate(0);
+}
+
+.diagonal-swipe:hover {
+  color: white;
+}

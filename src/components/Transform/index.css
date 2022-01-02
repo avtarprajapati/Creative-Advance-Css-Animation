@@ -1,5 +1,32 @@
-.transform {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.img-2d {
+  transition: transform 2s;
+  /* transform-origin */
+  /* transform-origin: 50% 10%; */
+  /* transform-origin: left bottom; */
+  /* transform-origin: 135px 122px; */
+}
+
+.img-2d:hover {
+  /* transform: translate(100%, -100%); */
+  /* transform: scale(2, 0.8); */
+  /* rotate units -> 360deg, 400grad, 1turn,1.5708rad */
+  transform: rotate(-180deg);
+  /* skew */
+  /* transform: skewX(180deg); */
+}
+
+.transform-container {
+  /* when 3d animate use perspective parent from its element */
+  /* distance from eye and screen */
+  /* perspective: 1000px; */
+}
+
+.img-3d {
+  transition: transform 2s;
+}
+
+.img-3d:hover {
+  /* come close to 300px */
+  /* transform: translateZ(300px); */
+  transform: rotateX(90deg);
 }
