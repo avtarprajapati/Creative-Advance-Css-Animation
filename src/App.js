@@ -5,13 +5,19 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { Transition, Transform, CreativeButton } from "./components";
+import {
+  Transition,
+  Transform,
+  CreativeButton,
+  CreativeImage,
+} from "./components";
 import "./App.css";
 
 const AccordianData = [
   { label: "Transition", component: Transition },
   { label: "Transform", component: Transform },
   { label: "Creative Button", component: CreativeButton },
+  { label: "Creative Image", component: CreativeImage },
 ];
 
 function App() {

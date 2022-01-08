@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 
-function CreativeButtonIndex() {
+function CreativeButton() {
   return (
     <div className="button-container">
       <a href="/" className="anchor rotate-btn">
@@ -77,4 +77,4 @@ function CreativeButtonIndex() {
   );
 }
 
-export default CreativeButtonIndex;
+export default CreativeButton;
