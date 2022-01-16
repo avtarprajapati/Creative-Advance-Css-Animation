@@ -16,6 +16,7 @@ function CreativeImage() {
           <p>you can write anything you want here!</p>
         </figcaption>
       </figure>
+      <hr />
       <figure className="container fe-2">
         <img src={Photo} alt="robot" width={180} height={150} />
         <figcaption className="caption caption-2">
@@ -23,6 +24,7 @@ function CreativeImage() {
           <p>you can write anything you want here!</p>
         </figcaption>
       </figure>
+      <hr />
       <figure className="container fe-3">
         <img src={Photo} alt="robot" width={180} height={150} />
         <figcaption className="caption caption-3">
@@ -30,6 +32,7 @@ function CreativeImage() {
           <p>you can write anything you want here!</p>
         </figcaption>
       </figure>
+      <hr />
       <figure className="container fe-4">
         <img src={Deer} alt="Deer" width={180} height={150} />
         <figcaption className="caption caption-4">
@@ -37,6 +40,7 @@ function CreativeImage() {
           <p>you can write anything you want here!</p>
         </figcaption>
       </figure>
+      <hr />
       <figure className="fe-5">
         <img src={Nature} alt="nature" width={180} height={150} />
         <figcaption className="caption-5">
@@ -44,9 +48,11 @@ function CreativeImage() {
           <p>you can write anything you want here!</p>
         </figcaption>
       </figure>
+      <hr />
       <div className="container fe-6">
         <img src={Girl} alt="girl" width={180} height={150} />
       </div>
+      <hr />
       <figure className="fe-7">
         <img src={CD} alt="CD" width={180} height={150} />
         <figcaption className="caption-7">
@@ -58,6 +64,7 @@ function CreativeImage() {
           <a href="#">read more</a>
         </figcaption>
       </figure>
+      <hr />
       <figure className="fe-8">
         <img src={CD} alt="CD" width={180} height={150} />
         <figcaption className="caption-8">
@@ -69,6 +76,7 @@ function CreativeImage() {
           <a href="#">read more</a>
         </figcaption>
       </figure>
+      <hr />
       <figure className="fe-9">
         <img src={CD} alt="CD" width={180} height={150} />
         <figcaption className="caption-9">
@@ -80,6 +88,7 @@ function CreativeImage() {
           <a href="#">read more</a>
         </figcaption>
       </figure>
+      <hr />
       <figure className="fe-10">
         <img src={CD} alt="CD" width={180} height={150} />
         <figcaption className="caption-10">
@@ -91,6 +100,7 @@ function CreativeImage() {
           <a href="#">read more</a>
         </figcaption>
       </figure>
+      <hr />
       <figure className="fe-11">
         <img src={CD} alt="CD" width={180} height={150} />
         <figcaption className="caption-11">

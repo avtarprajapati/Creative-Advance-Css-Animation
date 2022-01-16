@@ -10,6 +10,7 @@ import {
   Transform,
   CreativeButton,
   CreativeImage,
+  CreativeMenu,
 } from "./components";
 import "./App.css";
 
@@ -18,6 +19,7 @@ const AccordianData = [
   { label: "Transform", component: Transform },
   { label: "Creative Button", component: CreativeButton },
   { label: "Creative Image", component: CreativeImage },
+  { label: "Creative Menu", component: CreativeMenu },
 ];
 
 function App() {
