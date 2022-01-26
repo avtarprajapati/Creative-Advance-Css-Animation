@@ -11,6 +11,7 @@ import {
   CreativeButton,
   CreativeImage,
   CreativeMenu,
+  CreativeCard,
 } from "./components";
 import "./App.css";
 
@@ -20,6 +21,7 @@ const AccordianData = [
   { label: "Creative Button", component: CreativeButton },
   { label: "Creative Image", component: CreativeImage },
   { label: "Creative Menu", component: CreativeMenu },
+  { label: "Creative Card", component: CreativeCard },
 ];
 
 function App() {

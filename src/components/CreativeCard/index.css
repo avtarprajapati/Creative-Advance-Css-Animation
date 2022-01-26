@@ -1,0 +1,508 @@
+.card-container {
+  background-color: rgb(177, 177, 177);
+  padding: 80px 0;
+}
+
+.card {
+  margin: auto;
+  width: 300px;
+}
+
+/* background transition */
+.background-transition {
+  position: relative;
+  width: 320px;
+  padding: 40px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.background-transition::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: calc(-100% + 5px);
+  width: 100%;
+  height: 100%;
+  background-color: #ff56ac;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.background-transition:hover::before {
+  bottom: 0;
+}
+
+.background-transition .content {
+  position: relative;
+  text-transform: capitalize;
+  color: #777;
+  z-index: 2;
+  transition: 0.5s;
+}
+
+.background-transition h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.background-transition p {
+  font-size: 18px;
+}
+
+.background-transition a {
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 14px;
+  display: inline-block;
+  color: #777;
+  padding: 6px 10px;
+  background-color: white;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+}
+
+.background-transition:hover .content {
+  color: white;
+}
+
+/* expandable card */
+.expandable-card {
+  position: relative;
+  width: 300px;
+  height: 260px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+  padding: 20px 40px;
+  margin: 50px auto;
+}
+
+.expandable-card .imgbox {
+  position: relative;
+  width: 100%;
+  /* height: 100%; */
+  transform: translateY(-20px);
+  transition: all 0.3s;
+  z-index: 1;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.expandable-card:hover {
+  height: 420px;
+}
+
+.expandable-card .content {
+  padding: 10px 20px;
+  text-align: center;
+  color: #111;
+  transition: 0.3s;
+  transform: translateY(-500px);
+  opacity: 0;
+  z-index: 2;
+}
+.expandable-card:hover .content {
+  transform: translateY(-50px);
+  opacity: 1;
+}
+
+/* captain-marvel-card */
+.captain-marvel-card {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(45deg, #d41e31, #491f8f);
+  border-radius: 20px;
+  margin-top: 10%;
+  cursor: pointer;
+}
+
+.captain-marvel-card img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 400px;
+  transition: all 0.5s;
+  width: 70%;
+  z-index: 1;
+}
+
+.captain-marvel-card:hover img {
+  height: 430px;
+  left: 80%;
+}
+
+.captain-marvel-card .content {
+  position: relative;
+  width: 40%;
+  left: 20%;
+  color: white;
+  text-transform: capitalize;
+  transition: all 0.5s;
+  opacity: 0;
+  text-align: left;
+}
+
+.captain-marvel-card:hover .content {
+  left: 5%;
+  opacity: 1;
+}
+
+.captain-marvel-card h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.captain-marvel-card p {
+  margin-bottom: 20px;
+}
+
+.captain-marvel-card a {
+  background-color: white;
+  color: #111;
+  border-radius: 8px;
+}
+
+/* creative-border-card */
+.creative-border-card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background-color: white;
+  transition: all 0.5s;
+  margin-top: 20px;
+}
+
+.creative-border-card:hover {
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.2);
+}
+
+.creative-border-card .face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.creative-border-card .face1 {
+  text-align: center;
+  background-color: white;
+  color: #013d4a;
+}
+
+.creative-border-card .face1 h2 {
+  margin-top: 80px;
+}
+
+.creative-border-card .face1 a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #013d4a;
+  border: 2px solid #013d4a;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.creative-border-card .face2 {
+  background-color: #013d4a;
+  transition: all 0.5s;
+  opacity: 1;
+}
+
+.creative-border-card .face2 h2 {
+  font-size: 120px;
+  color: white;
+  transition: all 0.5s;
+}
+.creative-border-card:hover .face2 {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  top: 10%;
+  left: 55%;
+  padding: 0;
+  transform: translateX(-50%);
+  background-color: transparent;
+  border: 2px solid #013d4a;
+}
+
+.creative-border-card:hover .face2 h2 {
+  font-size: 32px;
+  color: #013d4a;
+}
+
+.creative-border-card a:hover {
+  background-color: #013d4a;
+  color: white;
+}
+
+/* face-card */
+.face-card {
+  position: relative;
+  cursor: pointer;
+  width: 300px;
+  margin-top: 6%;
+  margin-bottom: 6%;
+}
+
+.face-card .face1 {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  transform: translateY(100px);
+  z-index: 1;
+}
+
+.face-card:hover .face1 {
+  background-color: #ff0057;
+  transform: translateY(0);
+}
+
+.face-card .imgbox {
+  height: 100px;
+  width: 100px;
+  opacity: 0.2;
+  transition: 0.5s;
+}
+
+.face-card:hover .imgbox {
+  opacity: 1;
+}
+
+.face-card .face2 {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.8);
+  transform: translateY(-100px);
+  transition: all 0.5s;
+}
+
+.face-card:hover .face2 {
+  transform: translateY(0);
+}
+
+.face-card h3 {
+  margin: 10px 0 0;
+  padding: 0;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+
+.face-card p {
+  margin: 0;
+  padding: 0;
+}
+
+.face-card a {
+  font-weight: 900;
+  border: 1px solid #777;
+  margin-top: 10px;
+}
+
+.face-card a:hover {
+  background-color: #777;
+}
+
+/* layer-card-effect */
+.layer-card-effect {
+  position: relative;
+  width: 320px;
+  height: 350px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s;
+  z-index: 2;
+}
+
+.layer-card-effect::before,
+.layer-card-effect::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background-color: white;
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+.layer-card-effect:hover::before {
+  transform: rotate(20deg);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.layer-card-effect:hover::after {
+  transform: rotate(10deg);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.layer-card-effect .imgbox {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  width: 94%;
+  height: 95%;
+  background-color: #222;
+  transition: all 0.5s;
+  z-index: 3;
+}
+
+.layer-card-effect:hover .imgbox {
+  bottom: 80px;
+  height: 70%;
+}
+
+.layer-card-effect .details {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  height: 60px;
+  text-align: center;
+  z-index: 4;
+  opacity: 0;
+}
+.layer-card-effect:hover .details {
+  opacity: 1;
+}
+
+.layer-card-effect h2 {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 20px;
+  color: #777;
+  text-transform: uppercase;
+}
+
+.layer-card-effect h2 span {
+  font-weight: 500;
+  font-size: 16px;
+  color: #f38695;
+}
+
+.layer-card-effect img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* scaling-card-effect */
+.scaling-card-effect {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background-color: black;
+  box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.5);
+  margin-top: 5%;
+  overflow: hidden;
+}
+
+.scaling-card-effect .content {
+  position: absolute;
+  bottom: 0px;
+  width: 80%;
+  height: 80px;
+  background-color: white;
+  left: 10%;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.scaling-card-effect:hover .content {
+  height: 100%;
+  width: 100%;
+  left: 0;
+}
+
+.scaling-card-effect h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 25px;
+}
+
+.scaling-card-effect p {
+  width: 80%;
+  margin: auto;
+  font-size: 18px;
+  transition: 0.5s;
+  text-align: center;
+  opacity: 0;
+}
+
+.scaling-card-effect a {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  display: inline-block;
+  margin-top: 10px;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.scaling-card-effect p,
+.scaling-card-effect a {
+  opacity: 1;
+  transition-delay: 2s;
+}
+
+.scaling-card-effect .imgbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.scaling-card-effect img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+  border-radius: 0;
+}
+
+.scaling-card-effect:hover img {
+  opacity: 0;
+}
