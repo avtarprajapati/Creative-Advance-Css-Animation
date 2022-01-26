@@ -12,16 +12,18 @@ import {
   CreativeImage,
   CreativeMenu,
   CreativeCard,
+  CoolExamples,
 } from "./components";
 import "./App.css";
 
-const AccordianData = [
+const AccordionData = [
   { label: "Transition", component: Transition },
   { label: "Transform", component: Transform },
   { label: "Creative Button", component: CreativeButton },
   { label: "Creative Image", component: CreativeImage },
   { label: "Creative Menu", component: CreativeMenu },
   { label: "Creative Card", component: CreativeCard },
+  { label: "Cool Example", component: CoolExamples },
 ];
 
 function App() {
@@ -35,7 +37,7 @@ function App() {
     <div className="App">
       <Container maxWidth="lg">
         <h2 className="heading">Creative Advanced CSS Animations</h2>
-        {AccordianData.map(({ label, component: AccordianComponent }) => (
+        {AccordionData.map(({ label, component: AccordianComponent }) => (
           <Accordion
             key={label}
             expanded={label === expanded}

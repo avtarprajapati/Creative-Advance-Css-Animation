@@ -11,7 +11,7 @@ function Transform() {
         alt="random-chair"
         width="245"
         height="270"
-        className="img-2d"
+        className="img img-2d"
       />
       <hr />
       <h4>3D Transform</h4>
@@ -20,7 +20,7 @@ function Transform() {
         alt="random-chair"
         width="245"
         height="270"
-        className="img-3d"
+        className="img img-3d"
       />
     </div>
   );

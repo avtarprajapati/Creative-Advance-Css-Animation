@@ -36,6 +36,7 @@ function CreativeCard() {
           </p>
         </div>
       </div>
+      <hr />
       {/* Captain marvel card effect */}
       <div className="card captain-marvel-card">
         <div className="content">
@@ -49,6 +50,7 @@ function CreativeCard() {
         </div>
         <img src={CaptainWoman} alt="Captain Woman" />
       </div>
+      <hr />
       {/* creative border card */}
       <div className="card creative-border-card">
         <div className="face face1">
@@ -67,6 +69,7 @@ function CreativeCard() {
           <h2>88</h2>
         </div>
       </div>
+      <hr />
       {/* double face card hover effect */}
       <div className="card face-card">
         <div className="face1">
@@ -85,6 +88,7 @@ function CreativeCard() {
           </div>
         </div>
       </div>
+      <hr />
       {/* layer-card */}
       <div className="card layer-card-effect">
         <div className="imgbox">
@@ -98,6 +102,7 @@ function CreativeCard() {
           </h2>
         </div>
       </div>
+      <hr />
       {/* scaling card effect */}
       <div className="card scaling-card-effect">
         <div className="imgbox">
