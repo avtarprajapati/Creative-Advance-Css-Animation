@@ -110,12 +110,14 @@ a {
   height: 40px;
   line-height: 40px;
   text-align: center;
+  z-index: 1;
 }
 
 .split-background .menu-item a > div {
   position: absolute;
+  left: 0;
   top: 0;
-  width: 100%;
+  width: 110%;
   height: 100%;
 }
 
@@ -124,7 +126,7 @@ a {
   background-color: #262626;
   width: 100%;
   height: 25%;
-  /* z-index: -1; */
+  z-index: -1;
   left: 0;
   top: 0;
   transform: scaleX(0);
@@ -255,6 +257,7 @@ a {
 .two-border a {
   transition: all 0.5s;
   position: relative;
+  z-index: 1;
 }
 
 .two-border a::before {
@@ -286,7 +289,7 @@ a {
   background-color: black;
   transform: scale(0);
   transition: all 0.5s;
-  /* z-index: -1; */
+  z-index: -1;
 }
 
 .two-border a:hover:after {
@@ -294,7 +297,7 @@ a {
 }
 
 .two-border a:hover {
-  /* color: rgb(0, 255, 21); */
+  color: rgb(0, 255, 21);
 }
 
 /* border sniper */

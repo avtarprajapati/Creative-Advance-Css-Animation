@@ -47,7 +47,7 @@ function CreativeMenu() {
         </ul>
       </div>
       <hr />
-      {/* not work expected text color split-background */}
+      {/*text color split-background */}
       <div className="flex">
         <ul className="menu split-background">
           <li className="menu-item">
