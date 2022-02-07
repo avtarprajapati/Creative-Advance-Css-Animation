@@ -15,7 +15,6 @@ function CreativeAnimation() {
         </h2>
       </div>
       <hr />
-      {/* <div className="rotating-loading"></div> */}
       {/* driving-car-bike */}
       <div className="driving-car-bike">
         <div className="background">
