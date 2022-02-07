@@ -30,16 +30,20 @@ function CreativeAnimation() {
         </h2>
       </div>
       <hr />
+      {/* banner-animate */}
       <div className="banner-animate"></div>
       <hr />
+      {/* button-shaking */}
       <div className="button-shaking">
         <a href="#">Hover Me</a>
       </div>
       <hr />
+      {/* animate-button */}
       <div className="animate-button">
         <a href="#">Hover Me</a>
       </div>
       <hr />
+      {/* lighting-text */}
       <div className="lighting-text">
         <ul>
           <li>L</li>
@@ -55,6 +59,8 @@ function CreativeAnimation() {
       <hr />
       <div className="heart"></div>
       <hr />
+
+      {/*  text-background */}
       <div className="text-background">
         <h1>css animation</h1>
       </div>
