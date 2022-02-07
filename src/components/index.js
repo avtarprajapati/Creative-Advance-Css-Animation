@@ -6,3 +6,4 @@ export { default as CreativeMenu } from "./CreativeMenu";
 export { default as CreativeCard } from "./CreativeCard";
 export { default as CoolExamples } from "./CoolExamples";
 export { default as AnimationKeyframe } from "./AnimationKeyframe";
+export { default as CreativeAnimation } from "./CreativeAnimation";

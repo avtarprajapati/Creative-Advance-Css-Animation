@@ -14,6 +14,7 @@ import {
   CreativeCard,
   CoolExamples,
   AnimationKeyframe,
+  CreativeAnimation,
 } from "./components";
 import "./App.css";
 
@@ -26,6 +27,7 @@ const AccordionData = [
   { label: "Creative Card", component: CreativeCard },
   { label: "Cool Example", component: CoolExamples },
   { label: "Animation Keyframe", component: AnimationKeyframe },
+  { label: "Creative Animation Examples", component: CreativeAnimation },
 ];
 
 function App() {
