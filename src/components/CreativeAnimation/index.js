@@ -1,7 +1,7 @@
 import React from "react";
-import "./index.css";
 import Car from "../../images/car.png";
 import Motobike from "../../images/motobike.png";
+import "./index.css";
 
 function CreativeAnimation() {
   return (
@@ -154,6 +154,114 @@ function CreativeAnimation() {
       <hr />
       <div className="reveal-loading-text">
         <h1>loading</h1>
+      </div>
+      <hr />
+      <div className="line-loading">
+        <div className="loading" />
+      </div>
+      <hr />
+      <div className="growing-line-loading">
+        <div className="loading">
+          <div className="obj"></div>
+          <div className="obj"></div>
+          <div className="obj"></div>
+          <div className="obj"></div>
+          <div className="obj"></div>
+          <div className="obj"></div>
+          <div className="obj"></div>
+        </div>
+      </div>
+      <hr />
+      {/* rings-roation-loading */}
+      <div className="ring-loader">
+        <div className="loader">
+          <div className="outer"></div>
+          <div className="middle"></div>
+          <div className="inner"></div>
+          <div className="dot"></div>
+        </div>
+      </div>
+      <hr />
+      {/* fading out square */}
+      <div className="fading-out-square">
+        <div className="loader">
+          <span className="s1"></span>
+          <span className="s2"></span>
+          <span className="s3"></span>
+          <span className="s4"></span>
+          <span className="s5"></span>
+          <span className="s6"></span>
+          <span className="s7"></span>
+          <span className="s8"></span>
+          <span className="s9"></span>
+        </div>
+      </div>
+      <hr />
+      {/* growing-line-loading */}
+      <div className="growing-line-loading">
+        <div className="loading">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <hr />
+      {/* backgroung-box-moving */}
+      <div className="backgroung-box-moving">
+        <div className="container">
+          <div className="square"></div>
+          <div className="square"></div>
+          <div className="square"></div>
+          <div className="square"></div>
+          <div className="square"></div>
+          <div className="square"></div>
+          <div className="square"></div>
+          <div className="square"></div>
+          <div className="square"></div>
+          <div className="square"></div>
+          <div className="text">Background animation</div>
+        </div>
+      </div>
+      <hr />
+      <div className="hexagon-loader-container">
+        <div className="line">
+          <div className="hexagon"></div>
+        </div>
+      </div>
+      <hr />
+      <div className="expanding-line-menu">
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="#">Team</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <div className="background-box-growing">
+        <div className="container">
+          <h2>background animation</h2>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+        </div>
       </div>
     </div>
   );
